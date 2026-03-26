@@ -117,10 +117,31 @@ p { margin: 0 0 1rem; color: var(--muted); }
 .notice { border-left: 4px solid var(--green); padding: 1rem 1.1rem; border-radius: 14px; background: rgba(120,220,160,0.08); }
 :focus-visible { outline: 3px solid rgba(92,179,255,0.55); outline-offset: 3px; }
 @media (max-width: 960px) {
+  .header-inner {
+    min-height: auto;
+    padding: 0.95rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav {
+    width: 100%;
+    gap: 0.65rem;
+  }
   .hero-grid, .grid-2, .grid-3, .cards, .split, .footer-grid { grid-template-columns: 1fr; }
   .floating { position: static; margin-top: 1rem; max-width: none; }
 }
 @media (max-width: 640px) {
+  .nav a {
+    width: calc(50% - 0.35rem);
+    text-align: center;
+    padding: 0.72rem 0.9rem;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav a.btn {
+    width: 100%;
+  }
   .btn { width: 100%; }
   .hero-actions { flex-direction: column; }
 }
