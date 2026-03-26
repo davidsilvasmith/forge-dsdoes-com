@@ -95,7 +95,10 @@ p { margin: 0 0 1rem; color: var(--muted); }
   content: ''; position: absolute; left: 0; top: 0.7rem; width: 8px; height: 8px; border-radius: 50%; background: linear-gradient(135deg, var(--blue), var(--cyan));
   box-shadow: 0 0 0 6px rgba(92,179,255,0.12);
 }
-.role .meta { color: #d7e3f5; font-weight: 700; margin-bottom: 0.3rem; }
+.role-head { margin-bottom: 0.85rem; }
+.role-head h3 { margin-bottom: 0.35rem; font-size: clamp(1.2rem, 1.8vw, 1.5rem); color: #f5f8ff; }
+.role .meta { color: #d7e3f5; font-weight: 700; margin-bottom: 0.2rem; }
+.role-submeta { color: var(--cyan); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.01em; }
 .skill-grid { display: flex; flex-wrap: wrap; gap: 0.7rem; }
 .skill { padding: 0.62rem 0.85rem; border-radius: 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); color: #dce8f8; }
 .split { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 2rem; align-items: start; }
